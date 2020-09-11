@@ -1,0 +1,14 @@
+{
+  "name": "retromada",
+  "version": "0.0.0",
+  "main": "core/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tenasatupitsyn/retromada.git"
+  },
+  "author": {
+    "name": "Tenasatupitsyn",
+    "email": "tenasasenpai@gmail.com"
+  },
+  "homepage": "https://github.com/tenasatupitsyn/retromada"
+}
