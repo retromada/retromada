@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "node retromada.test.js",
-    "fix": "standard --fix"
+    "fix": "standard --fix",
+    "run:syncMirror": ".\\SyncMirror.ps1"
   },
   "engines": {
     "node": ">=14.0.0",
