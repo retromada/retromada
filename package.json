@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "main": "core/index.js",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "test": "node retromada.test.js",
+    "fix": "standard --fix"
+  },
   "engines": {
     "node": ">=14.0.0",
     "yarn": ">=1.22.5"
