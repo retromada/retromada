@@ -9,7 +9,7 @@ If (!(Test-Path $MirroredPath)) {
     & {
       git clone --mirror $Package.repository.url
       Set-Location $MirroredPath
-      git remote set-url --push origin "${Package.homepage}/retromada"
+      git remote set-url --push origin "$($Package.homepage)/retromada"
     }
   }
   Write-Host "Mirroring complete ($($MirroredPath))" -Foreground Green
