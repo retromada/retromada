@@ -1,6 +1,6 @@
 {
   "name": "retromada",
-  "version": "0.0.0",
+  "version": "gen3.0.0-2",
   "main": "core/index.js",
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
     "run:update-conf": "sh conf/update.sh"
   },
   "engines": {
-    "node": ">=14.0.0",
+    "node": ">=13.0.1 <14",
     "yarn": ">=1.22.5"
   },
   "repository": {
@@ -26,9 +26,7 @@
     "url": "https://github.com/retromada/retromada/issues"
   },
   "homepage": "https://github.com/retromada",
-  "dependencies": {
-    "module-alias": "^2.2.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^7.20.0",
     "eslint-config-prettier": "^7.2.0",
@@ -39,9 +37,5 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-promise": "^4.3.1",
     "prettier": "^2.2.1"
-  },
-  "_moduleAliases": {
-    "@root": "./",
-    "@base/*": "./structures/base/*.js"
   }
 }
