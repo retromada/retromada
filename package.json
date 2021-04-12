@@ -4,7 +4,10 @@
   "main": "core/index.js",
   "type": "module",
   "scripts": {
+    "dev": "cross-env DOTENV_CONFIG_PATH=.env.development node -r dotenv/config core/index.js",
+    "dev:prod": "cross-env NODE_ENV=production node -r dotenv/config core/index.js",
     "test": "node retromada.test.js",
+    "test:env": "cross-env DOTENV_CONFIG_PATH=.env.development node -r dotenv/config retromada.test.js",
     "fix": "standard --fix",
     "run:sync-mirror": "Powershell.exe -File .\\SyncMirror.ps1",
     "run:update-conf": "sh conf/update.sh"
@@ -28,6 +31,8 @@
   "homepage": "https://github.com/retromada",
   "dependencies": {},
   "devDependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
     "eslint": "^7.20.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-config-standard": "^16.0.2",

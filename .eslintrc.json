@@ -13,7 +13,7 @@
   },
   "plugins": [
     "prettier",
-    "import-helpers/order-imports"
+    "eslint-plugin-import-helpers"
   ],
   "rules": {
     "import-helpers/order-imports": [
