@@ -12,7 +12,8 @@
     "sourceType": "module"
   },
   "plugins": [
-    "prettier"
+    "prettier",
+    "import-helpers/order-imports"
   ],
   "rules": {
     "import-helpers/order-imports": [
