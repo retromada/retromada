@@ -1,10 +1,10 @@
-$ProjectPath = "~\root\retromada"
-$MirroredPath = "~\root\retromada.git"
+$ProjectPath = "X:\retromada"
+$MirroredPath = "X:\retromada.git"
 
 If (!(Test-Path $MirroredPath)) {
   Write-Host "The mirror is non-existent, reflecting..." -Foreground Yellow
   $Package = Get-Content "package.json" | ConvertFrom-Json
-  Set-Location "~\root"
+  Set-Location "X:\"
   Invoke-Command -ScriptBlock {
     & {
       git clone --mirror $Package.repository.url
