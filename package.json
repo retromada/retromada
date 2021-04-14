@@ -29,7 +29,9 @@
     "url": "https://github.com/retromada/retromada/issues"
   },
   "homepage": "https://github.com/retromada",
-  "dependencies": {},
+  "dependencies": {
+    "@retromada/conf": "^0.0.4"
+  },
   "devDependencies": {
     "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",

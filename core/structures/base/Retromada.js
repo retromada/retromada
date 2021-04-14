@@ -1,5 +1,9 @@
 export default class Retromada {
+  constructor (options = {}) {
+    this.conf = options.conf
+  }
+
   initialize () {
-    console.log('foo')
+    console.log(this.conf)
   }
 }
