@@ -21,6 +21,7 @@
       {
         "newlinesBetween": "always",
         "groups": [
+          "/^@retromada/",
           "module",
           ["parent", "sibling", "index"]
         ],
