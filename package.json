@@ -13,7 +13,7 @@
     "run:update-conf": "sh conf/update.sh"
   },
   "engines": {
-    "node": ">=13.0.1 <14",
+    "node": ">=14.15.2 <15",
     "yarn": ">=1.22.5"
   },
   "repository": {
