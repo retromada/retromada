@@ -1,9 +1,23 @@
+import Loaders from '../../loaders/index.js'
+
 export default class Retromada {
   constructor (options = {}) {
-    this.conf = options.conf
+    this.options = options
   }
 
   initialize () {
-    console.log(this.conf)
+    this.initializeLoaders()
+  }
+
+  async initializeLoaders () {
+    for (const loader in Loaders) {
+      const _loader = new Loaders[loader]()
+
+      try {
+        await _loader.load()
+      } catch (error) {
+        console.error(error)
+      }
+    }
   }
 }

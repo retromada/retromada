@@ -1,3 +1,5 @@
+import Toolbox from '@retromada/toolbox'
+
 export default class Utils {
   static whatEnv (value) {
     const env = process.env.NODE_ENV
@@ -16,3 +18,5 @@ export default class Utils {
     return env
   }
 }
+
+Object.assign(Utils, Toolbox)
