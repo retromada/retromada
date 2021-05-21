@@ -1,3 +1,4 @@
+import { PORT } from '@env'
 import express from 'express'
 
 import Loader from '../structures/Loader.js'
@@ -16,7 +17,7 @@ export default class HTTPLoader extends Loader {
     route._register(this.app)
   }
 
-  initializeHTTPServer (port = process.env.PORT) {
+  initializeHTTPServer (port = PORT) {
     this.app = express()
 
     this.app.use(express.json())
