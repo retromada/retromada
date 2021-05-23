@@ -10,7 +10,6 @@ module.exports = {
         [
           'dotenv-import',
           {
-            moduleName: '@env',
             allowUndefined: true
           }
         ]
@@ -21,7 +20,6 @@ module.exports = {
         [
           'dotenv-import',
           {
-            moduleName: '@env',
             path: '.env.development',
             allowUndefined: true
           }
