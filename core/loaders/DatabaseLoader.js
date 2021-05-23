@@ -1,5 +1,5 @@
-import { Mongo } from '../database/index.js'
-import Loader from '../structures/Loader.js'
+import { Mongo } from '@database/index.js'
+import Loader from '@structures/Loader.js'
 
 export default class DatabaseLoader extends Loader {
   constructor () {

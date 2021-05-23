@@ -46,6 +46,7 @@
     "@babel/preset-env": "^7.14.2",
     "auto-changelog": "^2.2.1",
     "babel-plugin-dotenv-import": "^2.2.0",
+    "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-transform-inline-environment-variables": "^0.4.3",
     "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",

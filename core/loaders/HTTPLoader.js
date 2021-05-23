@@ -1,8 +1,7 @@
 import { PORT } from '@env'
+import Loader from '@structures/Loader.js'
+import { Root } from '@utils/Constants.js'
 import express from 'express'
-
-import Loader from '../structures/Loader.js'
-import { Root } from '../utils/Constants.js'
 
 export default class HTTPLoader extends Loader {
   load () {
