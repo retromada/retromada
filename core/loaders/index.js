@@ -1,3 +1,4 @@
+import DatabaseLoader from './DatabaseLoader.js'
 import HTTPLoader from './HTTPLoader.js'
 
-export default { HTTPLoader }
+export default { DatabaseLoader, HTTPLoader }
