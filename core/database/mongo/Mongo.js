@@ -12,9 +12,9 @@ export default class Mongo extends DatabaseWrapper {
   }
 
   async connect () {
-    return Mongoose.connect(MONGO_URI, this.options).then((mongo) => {
+    return Mongoose.connect(MONGO_URI, this.options).then((mongoose) => {
       for (const [name, Repository] of Repositories) {
-        this[name] = new Repository(mongo)
+        this[name] = new Repository(mongoose)
       }
     })
   }
