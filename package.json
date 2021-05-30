@@ -35,6 +35,7 @@
   "homepage": "https://github.com/retromada",
   "dependencies": {
     "@retromada/conf": "^0.0.4",
+    "@retromada/instance-manager": "^0.2.0",
     "@retromada/toolbox": "https://github.com/retromada/toolbox.git#6871c54427da95d8c0601c8ca53d0a859ea31e4f",
     "express": "^4.17.1",
     "mongoose": "^5.12.11"
