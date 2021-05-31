@@ -7,7 +7,7 @@
     "build": "yarn clean && yarn build:core",
     "build:core": "babel core -d build -s",
     "start": "yarn build && node build/index.js",
-    "dev": "babel-node -r dotenv/config core/index.js",
+    "dev": "cross-env DOTENV_CONFIG_PATH=.env.development BABEL_DISABLE_CACHE=1 babel-node -r dotenv/config core/index.js",
     "dev:prod": "cross-env NODE_ENV=production yarn build && node -r dotenv/config build/index.js",
     "test": "node retromada.test.js",
     "test:env": "cross-env DOTENV_CONFIG_PATH=.env.development node -r dotenv/config retromada.test.js",
