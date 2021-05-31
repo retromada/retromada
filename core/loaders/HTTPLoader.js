@@ -4,8 +4,8 @@ import { Root } from '@utils/Constants.js'
 import express from 'express'
 
 export default class HTTPLoader extends Loader {
-  constructor () {
-    super({ singleShot: true })
+  constructor ({ logger }) {
+    super({ singleShot: true }, logger)
   }
 
   load () {
@@ -21,10 +21,17 @@ export default class HTTPLoader extends Loader {
   }
 
   initializeHTTPServer (port = PORT) {
+    if (!port) {
+      return this.logger.warn(
+        { labels: ['HTTP'] },
+        'Server not started - Environment variable "PORT" is not set'
+      )
+    }
+
     this.app = express()
 
     this.app.use(express.json())
 
-    this.app.listen(port)
+    this.app.listen(port, () => this.logger.info({ labels: ['HTTP'], port }))
   }
 }

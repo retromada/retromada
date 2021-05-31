@@ -38,7 +38,8 @@
     "@retromada/instance-manager": "^0.2.0",
     "@retromada/toolbox": "https://github.com/retromada/toolbox.git#6871c54427da95d8c0601c8ca53d0a859ea31e4f",
     "express": "^4.17.1",
-    "mongoose": "^5.12.11"
+    "mongoose": "^5.12.11",
+    "pino": "^6.11.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.3",
@@ -61,5 +62,8 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-promise": "^4.3.1",
     "prettier": "^2.2.1"
+  },
+  "optionalDependencies": {
+    "pino-pretty": "^5.0.1"
   }
 }

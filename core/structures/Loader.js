@@ -1,8 +1,10 @@
 import Utils from '@utils/index.js'
 
 export default class Loader {
-  constructor (options = {}) {
+  constructor (options = {}, logger) {
     this.singleShot = !!options.singleShot
+
+    this.logger = logger
   }
 
   async loadFiles (path, options) {

@@ -1,8 +1,10 @@
 import Loaders from '../../loaders/index.js'
+import Logger from '../Logger.js'
 
 export default class Retromada {
   constructor (options = {}) {
     this.options = options
+    this.logger = new Logger({ prettyPrint: true })
   }
 
   initialize () {
@@ -11,7 +13,7 @@ export default class Retromada {
 
   async initializeLoaders (singleShot) {
     for (const loader in Loaders) {
-      const _loader = new Loaders[loader]()
+      const _loader = new Loaders[loader]({ logger: this.logger })
 
       try {
         if (_loader.singleShot === singleShot) {

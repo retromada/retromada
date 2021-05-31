@@ -2,8 +2,8 @@ import { Mongo } from '@database/index.js'
 import Loader from '@structures/Loader.js'
 
 export default class DatabaseLoader extends Loader {
-  constructor () {
-    super({ singleShot: true })
+  constructor ({ logger }) {
+    super({ singleShot: true }, logger)
 
     this.database = null
   }
@@ -18,6 +18,13 @@ export default class DatabaseLoader extends Loader {
 
   initializeDatabase (DatabaseWrapper, options = {}) {
     this.database = new DatabaseWrapper(options)
-    this.database.connect().catch(console.error)
+    this.database
+      .connect()
+      .then(() =>
+        this.logger.info({ labels: ['Database'] }, 'Connection established')
+      )
+      .catch((error) =>
+        this.logger.error({ labels: ['Database'] }, error.message)
+      )
   }
 }
