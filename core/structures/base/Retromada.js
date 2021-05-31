@@ -6,15 +6,19 @@ export default class Retromada {
   }
 
   initialize () {
-    this.initializeLoaders()
+    this.initializeLoaders(true)
   }
 
-  async initializeLoaders () {
+  async initializeLoaders (singleShot) {
     for (const loader in Loaders) {
       const _loader = new Loaders[loader]()
 
       try {
-        await _loader.load()
+        if (_loader.singleShot === singleShot) {
+          await _loader.load()
+        } else {
+          continue
+        }
       } catch (error) {
         console.error(error)
       }

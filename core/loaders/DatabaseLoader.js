@@ -3,7 +3,7 @@ import Loader from '@structures/Loader.js'
 
 export default class DatabaseLoader extends Loader {
   constructor () {
-    super()
+    super({ singleShot: true })
 
     this.database = null
   }

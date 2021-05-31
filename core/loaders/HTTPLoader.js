@@ -4,6 +4,10 @@ import { Root } from '@utils/Constants.js'
 import express from 'express'
 
 export default class HTTPLoader extends Loader {
+  constructor () {
+    super({ singleShot: true })
+  }
+
   load () {
     this.initializeHTTPServer()
 
