@@ -5,7 +5,7 @@ import express from 'express'
 
 export default class HTTPLoader extends Loader {
   constructor ({ logger }) {
-    super({ singleShot: true }, logger)
+    super({ logger }, { singleShot: true })
   }
 
   load () {
