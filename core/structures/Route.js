@@ -1,4 +1,4 @@
-module.exports = class Route {
+export default class Route {
   constructor (options) {
     this.name = options.name
   }

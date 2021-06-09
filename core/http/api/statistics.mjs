@@ -1,8 +1,7 @@
-const { Router } = require('express')
+import Route from '@structures/Route.js'
+import { Router } from 'express'
 
-const Route = require('../../structures/Route.js')
-
-module.exports = class Statistics extends Route {
+export default class Statistics extends Route {
   register (app) {
     const router = Router()
 

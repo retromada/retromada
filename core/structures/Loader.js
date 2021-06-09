@@ -1,4 +1,4 @@
-import Utils from '@utils/index.js'
+import File from '@utils/File.js'
 
 export default class Loader {
   constructor (options = {}, logger) {
@@ -8,7 +8,7 @@ export default class Loader {
   }
 
   async loadFiles (path, options) {
-    await Utils.File.requireDirectory(
+    await File.requireDirectory(
       path,
       (file, filename, folder) => this.loadFile(file, filename, folder),
       console.error,
