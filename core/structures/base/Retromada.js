@@ -4,7 +4,7 @@ import Logger from '../Logger.js'
 export default class Retromada {
   constructor (options = {}) {
     this.options = options
-    this.logger = new Logger({ prettyPrint: true })
+    this.logger = new Logger(options.logger)
   }
 
   initialize () {
