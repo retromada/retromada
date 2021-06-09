@@ -3,6 +3,12 @@ import Pino from 'pino'
 
 export default class Logger {
   constructor (options = {}) {
+    try {
+      require.resolve('pino-pretty')
+    } catch (error) {
+      options.prettyPrint = false
+    }
+
     return Pino({
       name: options.name || 'Retromada',
       level: options.level || 'debug',

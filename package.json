@@ -64,6 +64,6 @@
     "prettier": "^2.2.1"
   },
   "optionalDependencies": {
-    "pino-pretty": "^5.0.1"
+    "pino-pretty": "^5.0.2"
   }
 }
