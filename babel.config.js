@@ -3,15 +3,18 @@ module.exports = {
   plugins: [
     '@babel/plugin-transform-runtime',
     'transform-inline-environment-variables',
-    ['module-resolver', {
-      // root: './core/**',
-      alias: {
-        '@structures': './core/structures',
-        '@database': './core/database',
-        '@http': './core/http',
-        '@utils': './core/utils'
+    [
+      'module-resolver',
+      {
+        // root: './core/**',
+        alias: {
+          '@structures': './core/structures',
+          '@database': './core/database',
+          '@http': './core/http',
+          '@utils': './core/utils'
+        }
       }
-    }]
+    ]
   ],
   env: {
     production: {
