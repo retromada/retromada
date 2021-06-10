@@ -1,0 +1,3 @@
+{
+  "changelog": "auto-changelog -c tools/changelog/.config -p"
+}

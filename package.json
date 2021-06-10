@@ -14,7 +14,7 @@
     "fix": "standard --fix",
     "run:sync-mirror": "Powershell.exe -File .\\SyncMirror.ps1",
     "run:update-conf": "sh conf/update.sh",
-    "changelog": "auto-changelog -c tools/changelog/.config -p"
+    "tools:js": "node tools/exec/exec.js"
   },
   "engines": {
     "node": ">=14.15.2 <15",
