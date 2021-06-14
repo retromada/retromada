@@ -22,9 +22,9 @@ export default class MongoRepository extends Repository {
     return this.model.findById(id, projection).then(this.parse)
   }
 
-  findAll (projection) {
+  findAll (query = {}, projection) {
     return this.model
-      .find({}, projection)
+      .find(query, projection)
       .then((entities) => entities.map(this.parse))
   }
 
