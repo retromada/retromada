@@ -9,16 +9,19 @@ const CredentialsSchema = new Schema(
     sentry: Buffer
   },
   {
+    id: false,
     _id: false
   }
 )
 
-export default new Schema({
-  _id: String,
-  seq: Number,
-  steam_id: { type: Object, required: true },
-  enabled: { type: Boolean, default: false },
-  role: { type: String, required: true },
-  is_bot_account: { type: Boolean, required: true },
-  credentials: CredentialsSchema
-})
+export default new Schema(
+  {
+    _id: { type: String, required: true, alias: 'steam_id' },
+    seq: Number,
+    enabled: { type: Boolean, default: false },
+    role: { type: String, required: true },
+    is_bot_account: { type: Boolean, required: true },
+    credentials: CredentialsSchema
+  },
+  { id: false }
+)

@@ -9,7 +9,9 @@ export default class MongoRepository extends Repository {
   }
 
   parse (entity) {
-    return entity ? entity.toObject({ versionKey: false }) : null
+    return entity
+      ? entity.toObject({ virtuals: true, versionKey: false })
+      : null
   }
 
   insert (entity) {
