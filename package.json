@@ -1,6 +1,6 @@
 {
   "name": "retromada",
-  "version": "gen3.0.0-2",
+  "version": "gen3.1.0-2",
   "main": "core/index.js",
   "scripts": {
     "clean": "rm -rf build && mkdir build",
@@ -36,6 +36,8 @@
   "dependencies": {
     "@retromada/conf": "^0.0.4",
     "@retromada/instance-manager": "^0.2.0",
+    "@retromada/prototype": "^0.0.3",
+    "@retromada/steam": "^0.1.0",
     "@retromada/toolbox": "https://github.com/retromada/toolbox.git#6871c54427da95d8c0601c8ca53d0a859ea31e4f",
     "express": "^4.17.1",
     "mongoose": "^5.12.11",

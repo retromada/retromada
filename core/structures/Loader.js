@@ -1,10 +1,11 @@
 import File from '@utils/File.js'
 
 export default class Loader {
-  constructor ({ logger }, options = {}) {
-    this.singleShot = !!options.singleShot
+  constructor (client, options = {}) {
+    this.client = client
+    this.logger = client.logger
 
-    this.logger = logger
+    this.singleShot = !!options.singleShot
   }
 
   async loadFiles (path, options) {

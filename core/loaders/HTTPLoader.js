@@ -4,8 +4,8 @@ import { Root } from '@utils/Constants.js'
 import express from 'express'
 
 export default class HTTPLoader extends Loader {
-  constructor ({ logger }) {
-    super({ logger }, { singleShot: true })
+  constructor (client) {
+    super(client, { singleShot: true })
   }
 
   load () {
