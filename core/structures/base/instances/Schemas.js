@@ -1,5 +1,7 @@
 import { Schema } from '@retromada/instance-manager'
 
+import { EmulatorsRoles } from '@utils/Constants.js'
+
 const CredentialsSchema = new Schema({
   username: String,
   password: String,
@@ -10,14 +12,22 @@ const CredentialsSchema = new Schema({
 
 const EmulatorsSchema = new Schema({
   conf: String,
+  database: Object,
   seq: Number,
-  steamID: Object,
+  steamID: 'any',
   role: String,
-  credentials: CredentialsSchema
+  credentials: CredentialsSchema,
+  user: 'any'
+}, {
+  methods: {
+    onlyEmployee () {
+      return this.role === EmulatorsRoles.EMPLOYEE
+    }
+  }
 })
 
-const Master = EmulatorsSchema.extend({
-  database: Object
-})
+const Master = EmulatorsSchema
 
-export default { Master }
+const Employee = EmulatorsSchema
+
+export default { Master, Employee }

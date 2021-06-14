@@ -1,21 +1,23 @@
 import { Manager } from '@retromada/instance-manager'
+import { ID, User } from '@retromada/steam'
 
 import Schemas from './Schemas.js'
 
-export default (iterable) => {
+export default ({ conf, database }, iterable) => {
   const manager = new Manager(iterable)
 
   return manager.each((_) =>
     manager.cache.set(
       _.seq,
       new Schemas[_.role.capitalize()]({
-        conf: null,
-        database: null,
+        conf,
+        database,
         seq: _.seq,
-        steamID: _.steam_id,
+        steamID: new ID(_.steam_id),
         role: _.role,
-        credentials: _.credentials
-      }).toObject()
+        credentials: _.credentials,
+        user: new User()
+      })
     )
   )
 }
