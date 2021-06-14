@@ -32,7 +32,7 @@ export default class MongoRepository extends Repository {
     return this.model.findOne(query, projection).then(this.parse)
   }
 
-  remove (id) {
+  delete (id) {
     return this.model.findByIdAndRemove(id).then(this.parse)
   }
 
