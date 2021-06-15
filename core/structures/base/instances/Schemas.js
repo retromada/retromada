@@ -12,7 +12,6 @@ const CredentialsSchema = new Schema({
 
 const EmulatorsSchema = new Schema({
   conf: String,
-  database: Object,
   seq: Number,
   steamID: 'any',
   role: String,
@@ -26,7 +25,9 @@ const EmulatorsSchema = new Schema({
   }
 })
 
-const Master = EmulatorsSchema
+const Master = EmulatorsSchema.extend({
+  database: Object
+})
 
 const Employee = EmulatorsSchema
 
