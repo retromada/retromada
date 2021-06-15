@@ -3,6 +3,7 @@
 > 2021-06-15T01:49:25.636Z
 
 - Putting the database back into the master extension [`d08dd9b`](https://github.com/ruj/retromada/commit/d08dd9bdfb3f972971fcc080ee4aab832d35b845)
+
 ### v3.1.0
 
 > 2021-06-14
