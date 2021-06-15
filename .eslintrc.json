@@ -28,6 +28,7 @@
         "alphabetize": { "order": "asc", "ignoreCase": true }
       }
     ],
+    "no-useless-constructor": "off",
     "space-before-function-paren": ["error", "always"],
     "prettier/prettier": "off"
   }
