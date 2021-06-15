@@ -1,6 +1,6 @@
 {
   "name": "retromada",
-  "version": "3.1.1",
+  "version": "0.1.0-gen.3",
   "main": "core/index.js",
   "scripts": {
     "clean": "rm -rf build && mkdir build",
