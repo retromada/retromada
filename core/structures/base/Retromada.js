@@ -1,6 +1,6 @@
 import Loaders from '../../loaders/index.js'
 import Logger from '../Logger.js'
-import Instances from './instances/index.js'
+import Instances, { Manager } from './instances/index.js'
 
 export default class Retromada {
   constructor (options = {}) {
@@ -20,15 +20,26 @@ export default class Retromada {
         await this.client.database.emulators.findAll({
           seq: { $in: [246, 247, 248, 249, 250] }
         })
-      ).cached((emulator) => {
-        // Magic!
+      ).cached((client, index) => {
+        Manager.wait(({ credentials, user } = client) => {
+          if (credentials.sentry) {
+            user.setSentry(credentials.sentry.buffer)
+          }
+
+          user.logOn({
+            accountName: credentials.username,
+            password: credentials.password
+          })
+
+          this.initializeLoaders(false, client)
+        }, index * Math.between(45, 60) * 1e3)
       })
     }
   }
 
-  async initializeLoaders (singleShot) {
+  async initializeLoaders (singleShot, client = this.client) {
     for (const loader in Loaders) {
-      const _loader = new Loaders[loader](this.client)
+      const _loader = new Loaders[loader](client)
 
       try {
         if (_loader.singleShot === singleShot) {

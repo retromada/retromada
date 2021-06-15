@@ -12,11 +12,13 @@ const CredentialsSchema = new Schema({
 
 const EmulatorsSchema = new Schema({
   conf: String,
+  cache: 'any',
   seq: Number,
   steamID: 'any',
   role: String,
   credentials: CredentialsSchema,
-  user: 'any'
+  user: 'any',
+  logger: 'any'
 }, {
   methods: {
     onlyEmployee () {
