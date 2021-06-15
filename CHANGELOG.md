@@ -1,6 +1,16 @@
+### [v0.1.0-gen.3](https://github.com/ruj/retromada/compare/v3.1.1...v0.1.0-gen.3)
+
+> 2021-06-15T02:12:52.102Z
+
+- Version script for registry new changes in change log [`c1c6d6f`](https://github.com/ruj/retromada/commit/c1c6d6f3bf0b1e8e8f2caa1aa44d697b03f1ff31)
+- _No commit message_ [`fe480e6`](https://github.com/ruj/retromada/commit/fe480e61e3be3672604116f317bb308922fdb9a3)
+- _No commit message_ [`370c3d5`](https://github.com/ruj/retromada/commit/370c3d5f875e46f8bb56e94d78f906a1688c9a1f)
+- New line after commits [`8801be4`](https://github.com/ruj/retromada/commit/8801be4ff69c28c04a8c2d9ab6f717fdcc79c4ce)
+- _No commit message_ [`b01ab96`](https://github.com/ruj/retromada/commit/b01ab969072046f9f08a49c9c9caaa31e07a83d2)
+
 ### [v3.1.1](https://github.com/ruj/retromada/compare/v3.1.0...v3.1.1)
 
-> 2021-06-15T01:49:25.636Z
+> 2021-06-14
 
 - Putting the database back into the master extension [`d08dd9b`](https://github.com/ruj/retromada/commit/d08dd9bdfb3f972971fcc080ee4aab832d35b845)
 
