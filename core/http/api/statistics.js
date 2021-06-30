@@ -1,5 +1,6 @@
-import Route from '@structures/Route.js'
 import { Router } from 'express'
+
+import Route from '../../structures/Route.js'
 
 export default class Statistics extends Route {
   register (app) {

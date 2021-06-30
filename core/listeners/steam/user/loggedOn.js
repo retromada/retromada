@@ -1,4 +1,4 @@
-import Listener from '@structures/Listener.js'
+import Listener from '../../../structures/Listener.js'
 
 export default class LoggedOn extends Listener {
   constructor (client) {
