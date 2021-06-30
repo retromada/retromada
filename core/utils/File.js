@@ -1,7 +1,5 @@
-import { promises } from 'fs'
+import { readdir, stat } from 'fs/promises'
 import { resolve, sep } from 'path'
-
-const { readdir, stat } = promises
 
 export default class File {
   /**
@@ -58,7 +56,11 @@ export default class File {
           )
 
           if (isDirectory) {
-            return File.requireDirectory(path, success, error)
+            return File.requireDirectory(path, success, error, {
+              folderIndex,
+              extensions,
+              recursive
+            })
           }
         }
       })
