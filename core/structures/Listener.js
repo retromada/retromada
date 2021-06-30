@@ -1,5 +1,5 @@
 export default class Listener {
-  constructor (client, options = {}) {
+  constructor (client) {
     this.client = client
     this.logger = client.logger
   }

@@ -14,7 +14,9 @@ export default class ListenerLoader extends Loader {
     const listener = new Listener(this.client)
 
     if (folder === 'user') {
-      this.client.user.on(event, (...v) => listener['on' + event.capitalize()](...v))
+      this.client.user.on(event, (...v) =>
+        listener['on' + event.capitalize()](...v)
+      )
     }
   }
 }
