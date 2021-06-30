@@ -1,8 +1,9 @@
-### [v0.2.1-gen.3](https://github.com/ruj/retromada/compare/v3.1.1...v0.2.1-gen.3)
+### [v0.3.0-gen.3](https://github.com/ruj/retromada/compare/v3.1.1...v0.3.0-gen.3)
 
-> 2021-06-30T21:14:59.408Z
+> 2021-06-30T21:19:59.156Z
 
 - Connections to Steam [`25effe5`](https://github.com/ruj/retromada/commit/25effe59a4c3a0edb103705535055cc0ec9b16fe)
+- Using the ESM charger for an elegant ending [`62dd5c7`](https://github.com/ruj/retromada/commit/62dd5c779b7a912cacff1f41f1efb33f7ce35a12)
 - Passing options to recursion [`f4ba89e`](https://github.com/ruj/retromada/commit/f4ba89e8f857593b64e2523d81c493b8a3094137)
 - Version script for registry new changes in change log [`c1c6d6f`](https://github.com/ruj/retromada/commit/c1c6d6f3bf0b1e8e8f2caa1aa44d697b03f1ff31)
 - _No commit message_ [`fe480e6`](https://github.com/ruj/retromada/commit/fe480e61e3be3672604116f317bb308922fdb9a3)
@@ -18,9 +19,15 @@
 
 - Putting the database back into the master extension [`d08dd9b`](https://github.com/ruj/retromada/commit/d08dd9bdfb3f972971fcc080ee4aab832d35b845)
 
-### [v3.1.0](https://github.com/ruj/retromada/compare/v0.2.0-gen.3...v3.1.0)
+### [v3.1.0](https://github.com/ruj/retromada/compare/v0.2.1-gen.3...v3.1.0)
 
 > 2021-06-14
+
+### [v0.2.1-gen.3](https://github.com/ruj/retromada/compare/v0.2.0-gen.3...v0.2.1-gen.3)
+
+> 2021-06-30
+
+- Passing options to recursion [`f4ba89e`](https://github.com/ruj/retromada/commit/f4ba89e8f857593b64e2523d81c493b8a3094137)
 
 ### v0.2.0-gen.3
 
