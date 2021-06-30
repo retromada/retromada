@@ -1,8 +1,9 @@
-### [v0.2.0-gen.3](https://github.com/ruj/retromada/compare/v3.1.1...v0.2.0-gen.3)
+### [v0.2.1-gen.3](https://github.com/ruj/retromada/compare/v3.1.1...v0.2.1-gen.3)
 
-> 2021-06-15T07:30:04.527Z
+> 2021-06-30T21:14:59.408Z
 
 - Connections to Steam [`25effe5`](https://github.com/ruj/retromada/commit/25effe59a4c3a0edb103705535055cc0ec9b16fe)
+- Passing options to recursion [`f4ba89e`](https://github.com/ruj/retromada/commit/f4ba89e8f857593b64e2523d81c493b8a3094137)
 - Version script for registry new changes in change log [`c1c6d6f`](https://github.com/ruj/retromada/commit/c1c6d6f3bf0b1e8e8f2caa1aa44d697b03f1ff31)
 - _No commit message_ [`fe480e6`](https://github.com/ruj/retromada/commit/fe480e61e3be3672604116f317bb308922fdb9a3)
 - _No commit message_ [`842c2f5`](https://github.com/ruj/retromada/commit/842c2f57d56415f7a006086cd18307e23b6e5853)
@@ -17,9 +18,13 @@
 
 - Putting the database back into the master extension [`d08dd9b`](https://github.com/ruj/retromada/commit/d08dd9bdfb3f972971fcc080ee4aab832d35b845)
 
-### v3.1.0
+### [v3.1.0](https://github.com/ruj/retromada/compare/v0.2.0-gen.3...v3.1.0)
 
 > 2021-06-14
+
+### v0.2.0-gen.3
+
+> 2021-06-15
 
 - Playing for Babel [`7065e66`](https://github.com/ruj/retromada/commit/7065e663af52e3efdf5090638dbc29fa457d4a77)
 - Lint and setup [`560c4f6`](https://github.com/ruj/retromada/commit/560c4f64cd4381c4d9e1cc54cf48549df2755262)
@@ -32,6 +37,7 @@
 - Change log [`8162307`](https://github.com/ruj/retromada/commit/8162307d5e475f9fd328562fe8ef75ffeb11e496)
 - _No commit message_ [`40a70ce`](https://github.com/ruj/retromada/commit/40a70ce4660bec8dcad1b5e0bdfcdd9822f598b6)
 - Schemes and repositories for the Mongo [`2faed34`](https://github.com/ruj/retromada/commit/2faed34f61269643e504f309d0fd1ca70f42173d)
+- Connections to Steam [`25effe5`](https://github.com/ruj/retromada/commit/25effe59a4c3a0edb103705535055cc0ec9b16fe)
 - ESM file loader [`c044b76`](https://github.com/ruj/retromada/commit/c044b765b58c25999dd22db7d8425404d053a363)
 - Plugin for resolving paths [`4522483`](https://github.com/ruj/retromada/commit/45224838663c0a555125e27b62428046fb574a56)
 - Schema adjustment of emulates [`795c683`](https://github.com/ruj/retromada/commit/795c68312f1cdfa25e0b9f9bf3027a9be84eee0f)
@@ -57,13 +63,18 @@
 - Logger passed to the first loader parameter inside an object [`afb5275`](https://github.com/ruj/retromada/commit/afb5275098efa0ea84497115706a65e30e7373b3)
 - Paths from the root [`c7a987d`](https://github.com/ruj/retromada/commit/c7a987d47582023122f62ca318f5b04121bf6ac5)
 - Path to another disk [`a8041e1`](https://github.com/ruj/retromada/commit/a8041e16a06e298b33e42e407d98e6e006e91b0e)
+- Putting the database back into the master extension [`d08dd9b`](https://github.com/ruj/retromada/commit/d08dd9bdfb3f972971fcc080ee4aab832d35b845)
 - Using the repository links available in the package file [`8c668d3`](https://github.com/ruj/retromada/commit/8c668d3e5d6f5db5450ba3821a35e74e91d28854)
 - Scripts [`02c6204`](https://github.com/ruj/retromada/commit/02c62047e89ec2dc9b4f61e17fb80235fcf88511)
 - Query parameter [`26ce60b`](https://github.com/ruj/retromada/commit/26ce60b1ebffca06fedc73ee5f297b43fd7b30b6)
 - _No commit message_ [`0e879bb`](https://github.com/ruj/retromada/commit/0e879bb3c853eb717ed0942d6d4b61ab770144c4)
 - New variable name for Mongoose [`ebbd07b`](https://github.com/ruj/retromada/commit/ebbd07bb080e78671d5230ef972e6616a8f830ee)
+- Version script for registry new changes in change log [`c1c6d6f`](https://github.com/ruj/retromada/commit/c1c6d6f3bf0b1e8e8f2caa1aa44d697b03f1ff31)
+- _No commit message_ [`fe480e6`](https://github.com/ruj/retromada/commit/fe480e61e3be3672604116f317bb308922fdb9a3)
 - _No commit message_ [`05ded2d`](https://github.com/ruj/retromada/commit/05ded2d13fffda1ce29cbc6ab1d89c6835b510cd)
 - _No commit message_ [`6f04cd2`](https://github.com/ruj/retromada/commit/6f04cd2e1347e149cba77040783d3b91489ba237)
+- _No commit message_ [`842c2f5`](https://github.com/ruj/retromada/commit/842c2f57d56415f7a006086cd18307e23b6e5853)
+- _No commit message_ [`370c3d5`](https://github.com/ruj/retromada/commit/370c3d5f875e46f8bb56e94d78f906a1688c9a1f)
 - Removal method renamed to delete [`da4f654`](https://github.com/ruj/retromada/commit/da4f6541b95eb64ab42089a2692416e4f96bd676)
 - Reconstituting environment variables for development without the babel cache [`e321bf5`](https://github.com/ruj/retromada/commit/e321bf5ba4d06d1bf7297fa7bf77ad10edd5d0cc)
 - _No commit message_ [`0b70cd9`](https://github.com/ruj/retromada/commit/0b70cd9700216944aae4ed07cc5fcd794d2b5cae)
@@ -74,5 +85,8 @@
 - Command with powershell executable to work in other environments [`2a80732`](https://github.com/ruj/retromada/commit/2a8073243f2177b523a0319f26111762a10787b4)
 - Renamed script command [`fdb8f0c`](https://github.com/ruj/retromada/commit/fdb8f0ca9c600aa7924d3a0310774a22ce3de35c)
 - _No commit message_ [`8f57378`](https://github.com/ruj/retromada/commit/8f57378467e74f5a73d7713ba81cdbbc79d9f9b7)
+- No useless constructor rule [`198eef0`](https://github.com/ruj/retromada/commit/198eef05dfc13c60e8299eef74b16915915a3476)
+- New line after commits [`8801be4`](https://github.com/ruj/retromada/commit/8801be4ff69c28c04a8c2d9ab6f717fdcc79c4ce)
+- _No commit message_ [`b01ab96`](https://github.com/ruj/retromada/commit/b01ab969072046f9f08a49c9c9caaa31e07a83d2)
 - Conf highlights [`2328ef5`](https://github.com/ruj/retromada/commit/2328ef5077b8c85dc702367ca8b3f74afc605e44)
 - Our packages at the top [`d5eb83f`](https://github.com/ruj/retromada/commit/d5eb83f5332acddd38bb64d6617e941859a7b2a7)
