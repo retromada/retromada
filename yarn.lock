@@ -1078,12 +1078,12 @@
   resolved "https://npm.pkg.github.com/download/@retromada/prototype/0.0.3/bb21bb892c3b38ad5083ee3748baa475f371d89be287c3d64e9fe7916838a199#518d3ddbd7427fec46426f01e3fc27c31495f2f4"
   integrity sha512-j57bYYFigkz/U5VPRFl2cU2wQkYXDW72JhDaUEDIxnIze40UxrN8fnmHZHfJXXRyPkF94XZ5mgtRyqBv0lXwxg==
 
-"@retromada/steam@^0.1.0":
-  version "0.1.0"
-  resolved "https://npm.pkg.github.com/download/@retromada/steam/0.1.0/4acf8adc60724c9ab7ea667e12f193ad5c07213bbf62f650cbf2b116deed4c37#c4e0a108318d9fddc19d1cae0e2000226ac6fd1c"
-  integrity sha512-LDj+Lg9WdczcSfs32y7UG+PmdEQ2B3VQiCYNNY3zVEpevApeS/dSrljp19LToTyJIRxgiMFMK26llW9bo+GFxA==
+"@retromada/steam@^0.2.0":
+  version "0.2.0"
+  resolved "https://npm.pkg.github.com/download/@retromada/steam/0.2.0/5a77f80eb327d6d490d59751f3abbecfd6625d7fb507cc342ef1908025b2a202#080a3dc5a4f232f713eb32dcf4dea0d5595c0adc"
+  integrity sha512-K8Mhl6kLkAxjaeHEy+PFPPLxOMCm/TABRtDFq9gMeijQJMyyOBGhuqVFJirggTRdlBSweNr6x1a1TsDttgknsw==
   dependencies:
-    steam-user "^4.19.2"
+    steam-user "^4.19.10"
     steamcommunity "^3.42.0"
     steamid "^1.1.3"
 
@@ -4790,7 +4790,7 @@ steam-totp@^2.0.1:
   resolved "https://registry.yarnpkg.com/steam-totp/-/steam-totp-2.1.1.tgz#c02c2696a062e676475d79712661e9f576ace4de"
   integrity sha512-d+tjnr3wwDkbrKFxjYZ0uK4CSF09oJwCmlGH8SdOlTDkbtBPuNhPKY0XzZxQVltZF6/JkEYj+uz+kBr6UrY7BQ==
 
-steam-user@^4.19.2:
+steam-user@^4.19.10:
   version "4.19.10"
   resolved "https://registry.yarnpkg.com/steam-user/-/steam-user-4.19.10.tgz#dd6798a77d40bbd8b8a3850ec072539ba263c9b6"
   integrity sha512-y75QLG7VhTZMmFJ7dUU+tjrPBtEJz5JpXdZaQV6QyxcaIvdNOz6G45gnrRtWds3a1nSsDpeh3V1QD4uWtfnOZQ==

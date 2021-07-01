@@ -1,4 +1,8 @@
+import { User } from '@retromada/steam'
+
 import Listener from '../../../structures/Listener.js'
+
+const { EPersonaState, EPersonaStateFlag } = User
 
 export default class LoggedOn extends Listener {
   constructor (client) {
@@ -15,6 +19,11 @@ export default class LoggedOn extends Listener {
       }`
     )
 
-    this.client.user.setPersona(1)
+    this.client.user.setActivity({
+      state: EPersonaState.Online,
+      flag: this.client.onlyEmployee()
+        ? EPersonaStateFlag.ClientTypeTenfoot
+        : EPersonaState.ClientTypeVR
+    })
   }
 }
