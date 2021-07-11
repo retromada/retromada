@@ -12,11 +12,16 @@ export default class ListenerLoader extends Loader {
 
   loadFile (Listener, event, folder) {
     const listener = new Listener(this.client)
+    const eventFn = (...v) => listener['on' + event.capitalize()](...v)
 
-    if (folder === 'user') {
-      this.client.user.on(event, (...v) =>
-        listener['on' + event.capitalize()](...v)
+    if (listener.unifiedEvents) {
+      listener.events.forEach((_event) =>
+        this.client[folder].on(_event, (...v) =>
+          listener['on' + _event.capitalize()](...v)
+        )
       )
+    } else {
+      this.client[folder].on(event, eventFn)
     }
   }
 }
