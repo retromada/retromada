@@ -21,7 +21,9 @@ export default class Utils {
         const value = options[name]
 
         if (typeof value === 'undefined') {
-          throw new Error(`The "${name}" option in the ${structure} structure is required`)
+          throw new Error(
+            `The "${name}" option in the ${structure} structure is required`
+          )
         }
 
         return value
