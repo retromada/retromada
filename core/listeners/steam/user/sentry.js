@@ -7,9 +7,21 @@ export default class Sentry extends Listener {
 
   onSentry (sentry) {
     const labels = ['Steam', 'User', 'sentry']
+    const masterSequence = +this.client.conf.masterSequence
 
-    this.client.database.emulators
-      .update({ seq: this.client.seq })
+    if (!this.client.cache.has(masterSequence)) {
+      return this.logger.warn(
+        { labels },
+        `Sentinel was not written to ${this.client.steamID} because the master was not found`
+      )
+    }
+
+    this.client.cache
+      .get(masterSequence)
+      .database.emulators.update(
+        { seq: this.client.seq },
+        { $set: { 'credentials.sentry': sentry } }
+      )
       .then(() =>
         this.logger.debug(
           {
