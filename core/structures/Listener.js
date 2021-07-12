@@ -1,4 +1,4 @@
-import Utils from '@utils/index.js'
+import Utils from '../utils/index.js'
 
 export default class Listener {
   constructor (client, options = {}) {
