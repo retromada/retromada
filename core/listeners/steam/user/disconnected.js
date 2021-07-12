@@ -5,5 +5,17 @@ export default class Disconnected extends Listener {
     super(client)
   }
 
-  onDisconnected (EResult, message) {}
+  async onDisconnected (EResult, message) {
+    const { player_name, level } = await this.client.user.getUser()
+
+    this.logger.warn(
+      {
+        labels: ['Steam', 'User', 'disconnected'],
+        player_name,
+        level,
+        eresult: EResult
+      },
+      `${this.client.user.profileURL} -- "${message}"`
+    )
+  }
 }
