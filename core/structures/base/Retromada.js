@@ -18,7 +18,8 @@ export default class Retromada {
       Instances(
         this.client,
         await this.client.database.emulators.findAll({
-          seq: { $in: [246, 247, 248, 249, 250] }
+          seq: { $in: [246, 247, 248, 249, 250] },
+          enabled: true
         })
       ).cached((client, index) => {
         Manager.wait(({ credentials, user } = client) => {
