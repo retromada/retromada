@@ -1,5 +1,3 @@
-/* eslint camelcase: "off" */
-
 import { User } from '@retromada/steam'
 
 import Listener from '../../../structures/Listener.js'
