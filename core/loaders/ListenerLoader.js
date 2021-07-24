@@ -14,6 +14,8 @@ export default class ListenerLoader extends Loader {
     const listener = new Listener(this.client)
     const eventFn = (...v) => listener['on' + event.capitalize()](...v)
 
+    if (this.client.onlyEmployee() && /discord/.test(folder)) return
+
     if (listener.unifiedEvents) {
       listener.events.forEach((_event) =>
         this.client[folder].on(_event, (...v) =>
