@@ -1,6 +1,8 @@
 import { Manager } from '@retromada/instance-manager'
 import { ID, User } from '@retromada/steam'
 
+import Discord from 'discord.js'
+
 import Logger from '../../Logger.js'
 import Schemas from './Schemas.js'
 
@@ -20,6 +22,7 @@ export default ({ conf, database }, iterable) => {
         steamID: new ID(_.steam_id),
         role: _.role,
         credentials: _.credentials,
+        discord: new Discord.Client(),
         user: new User(),
         logger: new Logger({ pid: _.seq, prettyPrint: true })
       })

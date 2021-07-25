@@ -28,7 +28,8 @@ const EmulatorsSchema = new Schema({
 })
 
 const Master = EmulatorsSchema.extend({
-  database: Object
+  database: Object,
+  discord: 'any'
 })
 
 const Employee = EmulatorsSchema
