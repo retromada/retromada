@@ -11,7 +11,7 @@ const CredentialsSchema = new Schema({
 })
 
 const EmulatorsSchema = new Schema({
-  conf: String,
+  conf: Object,
   cache: 'any',
   seq: Number,
   steamID: 'any',
