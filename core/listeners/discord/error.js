@@ -5,5 +5,7 @@ export default class Error extends Listener {
     super(client)
   }
 
-  onError (error) {}
+  onError (error) {
+    this.logger.error({ labels: ['Discord', 'error'] }, error)
+  }
 }
