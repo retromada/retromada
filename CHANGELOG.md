@@ -1,6 +1,35 @@
+### [v0.5.0-gen.3](https://github.com/ruj/retromada/compare/v0.4.0-gen.3...v0.5.0-gen.3)
+
+> 2021-08-01T15:17:00.286Z
+
+- Friendly events [`39d844a`](https://github.com/ruj/retromada/commit/39d844ac5ab5b91fcc1806af5903b19c56b5922f)
+- Discord dependency [`aa01868`](https://github.com/ruj/retromada/commit/aa01868c0fd65f2bf146d10718ac2c74b7bfa067)
+- Steam listeners base [`d879888`](https://github.com/ruj/retromada/commit/d87988803a2519250f371b91cc38f6f28da08caf)
+- Presence [`969a39f`](https://github.com/ruj/retromada/commit/969a39fce0fccec20c237e5b7ecadb2be56c3bcf)
+- Discord listeners base [`2e864db`](https://github.com/ruj/retromada/commit/2e864dbb60c70b3a235bffeba8e08f158b09b140)
+- New message when logged in [`7f829c0`](https://github.com/ruj/retromada/commit/7f829c0142559e5a3a2db51166137a5dae60b10d)
+- Issuance of bans and limitations on the account [`a642b4b`](https://github.com/ruj/retromada/commit/a642b4bd79c977411f4e74bc43417c9c527ee4e5)
+- Issuing disconnection and error [`8ef79f3`](https://github.com/ruj/retromada/commit/8ef79f3480f120028d1a8d47e2da100cfb69e1e1)
+- Option handler [`66e2fe7`](https://github.com/ruj/retromada/commit/66e2fe7a30bc65ccb9f343c286cb913d98d8e539)
+- Listeners options manipulated [`f91a010`](https://github.com/ruj/retromada/commit/f91a010e4d1322c9e7b00acf6053ccba072d3cff)
+- Using the database coupled to the master and informing the entity to update [`ca32c24`](https://github.com/ruj/retromada/commit/ca32c24dff98e79f89ce1b172e15110932da41c2)
+- Debugging the sentry when it is updated in the database [`f97d548`](https://github.com/ruj/retromada/commit/f97d5481921c0d93aff41810b1a643b3650edea0)
+- Bump Steam module [`1f9354b`](https://github.com/ruj/retromada/commit/1f9354b30bbda2c57b5c1c0559385c6ac3f0b624)
+- Fixing the conf type and passing execution options inside the main client [`787d1e2`](https://github.com/ruj/retromada/commit/787d1e26b6d905903421f667a35ebeba459a6ad7)
+- Assigning Discord to the master [`0fd71ee`](https://github.com/ruj/retromada/commit/0fd71ee05f2eab563d812ad7b71f56c16955bf2e)
+- Option not to push [`3c5fcd1`](https://github.com/ruj/retromada/commit/3c5fcd115329385e683c2735b24fcf42985ac2e8)
+- Failures listener [`8018dc7`](https://github.com/ruj/retromada/commit/8018dc771cd500371d80adc5baa33e0d18a38a44)
+- 2021-07-24T22:30:03.709Z [`06f14b8`](https://github.com/ruj/retromada/commit/06f14b8f51a10d12e4c33c839e29b8d2a0631938)
+- 2021-07-12T04:31:59.915Z [`a6d9081`](https://github.com/ruj/retromada/commit/a6d9081dc2e4e1bd01305b17d8cf0f510e3b7c14)
+- Prettier in action [`4664d8f`](https://github.com/ruj/retromada/commit/4664d8f7da4d2964d71590348583f732be7cda04)
+- Find everything that is also enabled [`90a80c0`](https://github.com/ruj/retromada/commit/90a80c002adb74cba0d773bfacc89c1c9a003320)
+- Camelcase rule [`b62043e`](https://github.com/ruj/retromada/commit/b62043e2f3a7edcc90912068949c59fbfb060a64)
+- Employees ignore Discord [`80b3ac9`](https://github.com/ruj/retromada/commit/80b3ac9513f66e45e3861972a751fabac22d1a98)
+- Path correction [`44cb117`](https://github.com/ruj/retromada/commit/44cb117c49ee3dbf3081e9aef48b1e72eaf540f3)
+
 ### [v0.4.0-gen.3](https://github.com/ruj/retromada/compare/v0.3.1-gen.3...v0.4.0-gen.3)
 
-> 2021-07-01T21:31:46.448Z
+> 2021-07-01
 
 - Method for setting the status and flag of each customer [`ca07edc`](https://github.com/ruj/retromada/commit/ca07edc2fcb3574c2b9740fdcdc87c96f37aa7bb)
 - Using javascript execution tool changelog script [`2b43195`](https://github.com/ruj/retromada/commit/2b4319552ad19b20e723a939a3ac31e427cf2f3c)
