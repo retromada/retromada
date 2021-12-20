@@ -2,6 +2,7 @@ import { PORT } from '@env'
 import Loader from '@structures/Loader.js'
 import { Root } from '@utils/Constants.js'
 import express from 'express'
+import PinoHTTPLogger from 'pino-http'
 
 export default class HTTPLoader extends Loader {
   constructor (client) {
@@ -30,6 +31,7 @@ export default class HTTPLoader extends Loader {
 
     this.app = express()
 
+    this.app.use(PinoHTTPLogger({ logger: this.logger }))
     this.app.use(express.json())
 
     this.app.listen(port, () => this.logger.info({ labels: ['HTTP'], port }))

@@ -44,7 +44,8 @@
     "esm": "^3.2.25",
     "express": "^4.17.1",
     "mongoose": "^5.12.11",
-    "pino": "^6.11.3"
+    "pino": "^6.11.3",
+    "pino-http": "^6.4.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.3",
