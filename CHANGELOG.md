@@ -1,6 +1,12 @@
+### [v0.5.2-gen.3](https://github.com/ruj/retromada/compare/v0.5.1-gen.3...v0.5.2-gen.3)
+
+> 2021-12-20T13:58:34.342Z
+
+- Flag correction [`b87ffa0`](https://github.com/ruj/retromada/commit/b87ffa06f4a6647549ab8d8d8ae4c9efb300ccb5)
+
 ### [v0.5.1-gen.3](https://github.com/ruj/retromada/compare/v0.5.0-gen.3...v0.5.1-gen.3)
 
-> 2021-12-20T13:56:58.045Z
+> 2021-12-20
 
 - HTTP Logger [`1d0e4c7`](https://github.com/ruj/retromada/commit/1d0e4c755a8dde0dfd417e42082bd54f3c719692)
 - Bumped maximum node version [`3d1e9a1`](https://github.com/ruj/retromada/commit/3d1e9a1024bd5be1c0276719fb78f88d8fe0d130)
