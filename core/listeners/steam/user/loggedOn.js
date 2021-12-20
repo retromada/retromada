@@ -42,7 +42,7 @@ export default class LoggedOn extends Listener {
       state: EPersonaState.Online,
       flag: this.client.onlyEmployee()
         ? EPersonaStateFlag.ClientTypeTenfoot
-        : EPersonaState.ClientTypeVR
+        : EPersonaStateFlag.ClientTypeVR
     })
   }
 }
