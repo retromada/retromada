@@ -1,6 +1,13 @@
+### [v0.5.1-gen.3](https://github.com/ruj/retromada/compare/v0.5.0-gen.3...v0.5.1-gen.3)
+
+> 2021-12-20T13:56:58.045Z
+
+- HTTP Logger [`1d0e4c7`](https://github.com/ruj/retromada/commit/1d0e4c755a8dde0dfd417e42082bd54f3c719692)
+- Bumped maximum node version [`3d1e9a1`](https://github.com/ruj/retromada/commit/3d1e9a1024bd5be1c0276719fb78f88d8fe0d130)
+
 ### [v0.5.0-gen.3](https://github.com/ruj/retromada/compare/v0.4.0-gen.3...v0.5.0-gen.3)
 
-> 2021-08-01T15:17:00.286Z
+> 2021-08-01
 
 - Friendly events [`39d844a`](https://github.com/ruj/retromada/commit/39d844ac5ab5b91fcc1806af5903b19c56b5922f)
 - Discord dependency [`aa01868`](https://github.com/ruj/retromada/commit/aa01868c0fd65f2bf146d10718ac2c74b7bfa067)
