@@ -8,8 +8,10 @@ import Schemas from './Schemas.js'
 
 export { Manager }
 
-export default ({ conf, database }, iterable) => {
+export default ({ conf, database, http }, iterable) => {
   const manager = new Manager(iterable)
+
+  http.emulators = manager.cache
 
   return manager.each((_) =>
     manager.cache.set(

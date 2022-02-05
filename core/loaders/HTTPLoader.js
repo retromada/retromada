@@ -16,7 +16,7 @@ export default class HTTPLoader extends Loader {
   }
 
   loadFile (Route, name) {
-    const route = new Route({ name })
+    const route = new Route(this.client, { name })
 
     route._register(this.app)
   }

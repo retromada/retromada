@@ -5,6 +5,7 @@ import Instances, { Manager } from './instances/index.js'
 export default class Retromada {
   constructor (options = {}) {
     this.client = {
+      http: {},
       logger: new Logger(options.logger),
       ...(delete options.logger && options)
     }
