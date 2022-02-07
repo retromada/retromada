@@ -12,7 +12,8 @@
     "test": "node -r esm retromada.test.js",
     "test:env": "cross-env DOTENV_CONFIG_PATH=.env.development node -r dotenv/config -r esm retromada.test.js",
     "fix": "standard --fix",
-    "run:sync-mirror": "Powershell.exe -File .\\SyncMirror.ps1",
+    "run:sync-mirror": "Powershell.exe -File .\\scripts\\SyncMirror.ps1",
+    "run:sync-mirror-w-policy": "sh scripts/execution_policy.sh && yarn run:sync-mirror",
     "run:update-conf": "sh conf/update.sh",
     "tools:js": "node tools/exec/exec.js",
     "version": "yarn tools:js changelog && git add CHANGELOG.md"
