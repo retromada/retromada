@@ -1,6 +1,13 @@
+### [v0.5.3-gen.3](https://github.com/ruj/retromada/compare/v0.5.2-gen.3...v0.5.3-gen.3)
+
+> 2022-02-07T07:44:55.087Z
+
+- Accounts now available in the API [`0d99ebd`](https://github.com/ruj/retromada/commit/0d99ebda778b7ab897542b29eaa7e9b2a552ad2a)
+- Repository synchronization with a execution policy pre-check [`b1e74bc`](https://github.com/ruj/retromada/commit/b1e74bc4f9d758609ba22acf45612dc4c7470716)
+
 ### [v0.5.2-gen.3](https://github.com/ruj/retromada/compare/v0.5.1-gen.3...v0.5.2-gen.3)
 
-> 2021-12-20T13:58:34.342Z
+> 2021-12-20
 
 - Flag correction [`b87ffa0`](https://github.com/ruj/retromada/commit/b87ffa06f4a6647549ab8d8d8ae4c9efb300ccb5)
 
